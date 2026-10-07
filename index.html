@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">PHYSICS LEARNING TOOL</p>
+      <h1>Physics Calculator</h1>
+      <p>Calculate the answer and learn exactly how it was solved.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="topics" aria-label="Physics topics">
+      <button class="topic active" data-topic="motion">Motion</button>
+      <button class="topic" data-topic="force">Force</button>
+      <button class="topic" data-topic="energy">Work &amp; Energy</button>
+      <button class="topic" data-topic="momentum">Momentum</button>
+      <button class="topic" data-topic="electricity">Electricity</button>
+    </section>
+
+    <section class="calculator-grid">
+      <div class="card">
+        <div class="section-label">CALCULATOR</div>
+        <h2 id="topic-title">Motion</h2>
+
+        <label for="solve">What do you want to find?</label>
+        <select id="solve"></select>
+
+        <div id="fields"></div>
+
+        <button id="calculate" class="calculate">Calculate</button>
+        <button id="reset" class="reset">Reset</button>
+      </div>
+
+      <div class="card solution-card">
+        <div class="section-label">STEP-BY-STEP SOLUTION</div>
+        <div id="solution" class="empty">
+          Enter your values and press Calculate.
+        </div>
+      </div>
+    </section>
+
+    <section class="formula-reference card">
+      <div class="section-label">FORMULA REFERENCE</div>
+      <h2>Quick Reference</h2>
+      <div class="formula-grid">
+        <div><strong>Speed</strong><span>v = d / t</span></div>
+        <div><strong>Acceleration</strong><span>a = (v₂ − v₁) / t</span></div>
+        <div><strong>Force</strong><span>F = ma</span></div>
+        <div><strong>Work</strong><span>W = Fd</span></div>
+        <div><strong>Kinetic Energy</strong><span>KE = ½mv²</span></div>
+        <div><strong>Power</strong><span>P = W / t</span></div>
+        <div><strong>Momentum</strong><span>p = mv</span></div>
+        <div><strong>Ohm's Law</strong><span>V = IR</span></div>
+        <div><strong>Electrical Power</strong><span>P = VI</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Physics Calculator • Built for learning</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
